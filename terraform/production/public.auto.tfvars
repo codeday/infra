@@ -25,19 +25,19 @@ domain_country_specific = [
 dmarc_rua = {
   "codeday.ca"     = "mailto:re+cqgb2ltrmgm@dmarc.postmarkapp.com"
   "codeday.ch"     = "mailto:re+qtaphb9qcfc@dmarc.postmarkapp.com",
-  "codeday.ee"     = "",
-  "codeday.es"     = "",
+  "codeday.ee"     = "mailto:re+snvqy8hv6uf@dmarc.postmarkapp.com",
+  "codeday.es"     = "mailto:re+ksywwsyxiz1@dmarc.postmarkapp.com",
   "codeday.fr"     = "mailto:re+qtaphb9qcfc@dmarc.postmarkapp.com",
   "codeday.in"     = "mailto:re+qtaphb9qcfc@dmarc.postmarkapp.com",
   "codeday.it"     = "mailto:re+swkqh6sefl2@dmarc.postmarkapp.com",
   "codeday.se"     = "mailto:re+swkqh6sefl2@dmarc.postmarkapp.com",
   "codeday.co.uk"  = "mailto:re+swkqh6sefl2@dmarc.postmarkapp.com",
-  "srnd.org"       = "",
-  "studentrnd.org" = "",
-  "studentrnd.com" = "",
-  "codeday.us"     = "",
-  "codeday.xyz"    = "",
-  "codeday.org"    = "",
+  "srnd.org"       = "mailto:re+oylttiijnvb@dmarc.postmarkapp.com",
+  "studentrnd.org" = "mailto:re+pfbxf90hjnm@dmarc.postmarkapp.com",
+  "studentrnd.com" = "mailto:re+nzsgui0u57c@dmarc.postmarkapp.com",
+  "codeday.us"     = "mailto:re+ccketjwjw5x@dmarc.postmarkapp.com",
+  "codeday.xyz"    = "mailto:re+gzvxznskvpo@dmarc.postmarkapp.com",
+  "codeday.org"    = "mailto:re+p3tqby76fdg@inbound.dmarcdigests.com",
 }
 
 root_txt_records = {
@@ -53,7 +53,7 @@ root_txt_records = {
   "srnd.org"       = [],
   "studentrnd.org" = ["google-site-verification=UXs5_KNkNTdKbjfWMXYZkC62Sm1AGpC26fmwGJWELIE"],
   "studentrnd.com" = [],
-  "codeday.us"     = [],
+  "codeday.us"     = ["google-site-verification=BuVi92MciFyEFkw_BeEAW0gTq9fZbIt3XB6NHqlaTAM"],
   "codeday.xyz"    = ["google-site-verification=USCD3-I2rreTHVwFKWQ74RlmAnsKbHlmzvVxLdGU-S8"],
   "codeday.org"    = ["google-site-verification=xWYdwWHz551K6I_3eU5Q0lZWd8PsEHXb-bUKYqo__jc"],
 }

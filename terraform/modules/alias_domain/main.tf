@@ -53,4 +53,23 @@ module "redirect" {
   }
 }
 
+resource "aws_route53_record" "root_txt" {
+  zone_id = aws_route53_zone.zone.zone_id
+  name    = var.domain
+  type    = "TXT"
 
+  records = concat(
+    ["v=spf1 include:_spf.google.com include:calendar-server.bounces.google.com include:spf.mtasv.net ~all"],
+    coalesce(var.root_txt_records, []),
+  )
+
+  ttl = 300
+}
+
+resource "aws_route53_record" "dmarc" {
+  zone_id = aws_route53_zone.zone.zone_id
+  name    = "_dmarc"
+  type    = "TXT"
+  records = ["v=DMARC1; p=reject; pct=100; rua=${var.dmarc_rua}; sp=reject; aspf=r;"]
+  ttl     = 300
+}

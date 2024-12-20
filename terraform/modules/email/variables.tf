@@ -21,15 +21,3 @@ variable "google_dkim_public_key" {
   type        = string
   default     = ""
 }
-
-variable "root_txt_records" {
-  description = "Root TXT records for the domain"
-  type        = list(string)
-  default     = []
-}
-
-variable "dmarc_rua" {
-  description = "DMARC RUA for the domain"
-  type        = string
-  default     = ""
-}
